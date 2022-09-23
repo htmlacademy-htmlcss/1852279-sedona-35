@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Юлия Пророкова](https://up.htmlacademy.ru/htmlcss/35/user/1852279).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Корелин](https://htmlacademy.ru/profile/maxzbest).
 
 ---
 
