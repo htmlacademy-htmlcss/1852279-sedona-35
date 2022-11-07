@@ -14,7 +14,14 @@
 }
 
 /* Общее */
+html {
+    height: 100%;
+}
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -29,9 +36,29 @@ body {
     color: #000;
     text-decoration: none;
 }
+.navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    width: 500px;
+}
+.navigation-user {
+    margin: 0;
+    padding: 0;
+    max-width: 300px;
+    margin-left: auto;
+}
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
 
 /* Кнопки главная */
-.button-navigation {
+.button {
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
@@ -59,18 +86,40 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
+.logo {
+    display: block;
+    margin: 0 auto;
+}
 .main-index {
     text-align: center;
 }
 
 /* Преимущества */
+.advantages-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.advantages-item {
+    margin: 0;
+    background-color: #e6f0f6;
+    width: 400px;
+    height: 384px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 103px 85px 121px;
+    box-sizing: border-box;
+}
+.advantages-item-image {
+    width: 800px;
+}
 .advantages-title {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
-}
-.advantages-item {
-    background-color: #e6f0f6;
 }
 .advantages-item-light {
     background-color: #f0f6fa;
@@ -78,19 +127,37 @@ body {
 .advantages-item-dark {
     color: #fff;
     background-color: #82B3D3;
+    padding: 92px 85px 111px;
 }
 
 /* Сервисы */
+.services-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
 .services-title {
+    margin: 0;
+    padding: 0;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
 }
+.services-item {
+    margin: 0;
+    width: 400px;
+    height: 384px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 85px 81px;
+    box-sizing: border-box;
+    background-color: #e6f0f6;
+}
 .services-item-light{
     background-color: #f0f6fa;
-}
-.services-item {
-    background-color: #e6f0f6;
 }
 /* Заявка */
 .info-email
@@ -111,14 +178,34 @@ body {
     line-height: 26px;
     color: #fff;
 }
-/* Телефон */
+/* Футер */
+.page-footer {
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    width: 1200px;
+}
+.page-footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 70px 30px;
+}
 .footer-phone-title {
     font-size: 40px;
     line-height: 40px;
     text-transform: uppercase;
     color: #242424;
     text-decoration: none;
+    width: 720px;
+    margin: 0 auto;
+    text-align: center;
 }
+.footer-social {
+    margin: 0;
+    max-width: 142px;
+  }
+
 /* Каталог */
 .inner-header {
     background-image: url("../images/catalog/catalog-background.jpg");
